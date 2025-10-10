@@ -1,0 +1,21 @@
+// Simple calculator function
+function calculator(a, b, operation) {
+  switch(operation) {
+    case 'add':
+      return a + b;
+    case 'subtract':
+      return a - b;
+    case 'multiply':
+      return a * b;
+    case 'divide':
+      return b !== 0 ? a / b : 'Cannot divide by zero';
+    default:
+      return 'Invalid operation';
+  }
+}
+
+// Test the calculator
+console.log('5 + 3 =', calculator(5, 3, 'add'));
+console.log('10 - 4 =', calculator(10, 4, 'subtract'));
+console.log('6 * 7 =', calculator(6, 7, 'multiply'));
+console.log('20 / 5 =', calculator(20, 5, 'divide'));
