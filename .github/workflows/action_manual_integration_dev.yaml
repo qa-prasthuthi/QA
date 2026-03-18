@@ -1,0 +1,11 @@
+name: Run integration DEV
+
+on:
+  workflow_dispatch:
+
+jobs:
+  manual-integration-dev:
+    uses: ./.github/workflows/call_run_integration.yaml
+    with:
+      environment: dev
+    secrets: inherit
